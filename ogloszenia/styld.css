@@ -1,0 +1,146 @@
+@font-face{
+	font-family: Roboto;
+	src: url(fonts//Roboto-Regular.ttf);
+}
+input, select, option{
+	color: black;
+}
+*{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+body{
+	background-color: #121921;
+	font-family: Roboto;
+}
+header{
+	background-color: #2a3e53;
+}
+.menu a{
+	color: #f094a7;
+	text-decoration: none;
+	margin: 0;
+  top: 50%;
+}
+.menu li{
+	background-color: #313E6B;
+	line-height: 200%;
+	display: block;
+	height: 50px;
+	text-align: center;
+	width: 20%; 
+	font-size: 20px;
+	transition-duration: 0.5s;
+	float: left;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu li: last-child{
+	clear: both;
+}
+.menu li:hover{
+	background-color: #2F2D61;
+}
+div.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#logo{
+	display: block;
+	margin: 0 auto;
+	width: 700px;
+
+}
+#main{
+	background-color: #222F3D;
+	display: block;
+	margin: 50px auto 0 auto;
+	width: 50%;
+
+}
+h2{
+	color: #f094a7;
+	text-align: center;
+	background-color: #24572D;
+	padding: 10px 50px;
+	margin: 0 auto;
+	max-height: 78px;
+}
+p, a{
+ text-align: center;
+ text-decoration: none;
+}
+.divimg{
+	width: 100%;
+	float: left;
+	height: 322px;
+}
+.maindiv{
+	width: 50%;
+	height: auto;
+}
+.mainsection{
+	height: 322px;
+	width: 50%;
+	float: left;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#grandDeal{
+	clear: both;
+}
+.insection{
+	min-height: 400px;
+	clear: both;
+}
+.insection p{
+	margin: 10px;
+}
+.flexbox{
+	display: flex;
+	justify-content: center;
+}
+form, input, select{
+	margin: 10px;
+}
+input{
+	width: 100%;
+}
+.orangeButton{
+	padding: 30px;
+	background-color: orange;
+	text-decoration: none;
+	font-weight: 700;
+}
+.infoContainer{
+	margin-top: 75px;
+	background-color: #8882FF	;
+	height: 322px;
+}
+.infoContainer:last-child{
+	margin-bottom: 75px;
+}
+.text{
+		color: black;
+}
+.text+p{
+	color: white;
+	margin-top:5px;
+}
+h3{
+	background-color: orange;
+}
+.headimg{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.textContainer p{
+	background-color: #222F3D;
+	padding: 20px 0 100px 0;
+}
