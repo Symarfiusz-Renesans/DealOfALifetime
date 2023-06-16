@@ -31,7 +31,7 @@ header{
 	text-align: center;
 	width: 20%; 
 	font-size: 20px;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	float: left;
 	display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ div.menu {
 #logo{
 	display: block;
 	margin: 0 auto;
-	width: 700px;
+	width: 300px;
 
 }
 #main{
@@ -60,7 +60,9 @@ div.menu {
 	display: block;
 	margin: 50px auto 0 auto;
 	width: 50%;
-
+}
+#main>section>form>section{
+	width: 75%;
 }
 h2{
 	color: #f094a7;
@@ -109,17 +111,27 @@ p, a{
 	display: flex;
 	justify-content: center;
 }
-form, input, select{
+form, input, select, textarea, button{
+	padding: 5px;
+	margin: 10px;
+	margin-left: 0;
+	border-radius: 0;
+}		
+label{
 	margin: 10px;
 }
-input{
-	width: 100%;
-}
 .orangeButton{
-	padding: 30px;
+	padding: 10px;
 	background-color: orange;
 	text-decoration: none;
 	font-weight: 700;
+	border: none;
+}
+.orangeButton:hover{
+	background-color: darkorange;
+}
+button:hover, select:hover{
+	cursor: pointer;
 }
 .infoContainer{
 	margin-top: 75px;
@@ -148,3 +160,32 @@ h3{
 	background-color: #222F3D;
 	padding: 20px 0 100px 0;
 }
+
+input[type = text], textarea{
+	width:100%;
+	border: 2px solid orange;
+  border-radius: 4px;
+}
+.custom-file-input{
+  display: none;
+}
+.zmylka{
+	padding: 10px;
+	margin: 10px;
+	margin-left: 0;
+	border-radius: 0;
+	color: white;
+  content: 'Wybierz zdjęcie';
+  display: inline-block;
+  font-weight: 700	;
+  background: orange;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition-duration: 0.25;
+}
+.zmylka:hover{
+  background: darkorange;
+}
+
