@@ -83,6 +83,10 @@ p, a{
 	width: 50%;
 	height: auto;
 }
+.maindivNews{
+	width: 100%;
+	height: auto;
+}
 .mainsection{
 	height: 322px;
 	width: 50%;
@@ -119,7 +123,7 @@ input{
 }
 .infoContainer{
 	margin-top: 75px;
-	background-color: #8882FF	;
+	background-color: 	#625EB8;
 	height: 322px;
 }
 .infoContainer:last-child{

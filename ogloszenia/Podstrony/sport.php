@@ -29,18 +29,18 @@
 
 <div class="menu">
 	<ul>
-		<a href="Podstrony/zycie.php" style="display: block;"><li>Życie Gwiazd</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Filmy</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Sport</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Stwórz Wiadomość</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Galeria</li></a>
+		<a href="zycie.php" style="display: block;"><li>Życie Gwiazd</li></a>
+		<a href="filmy.php" style="display: block;"><li>Filmy</li></a>
+		<a href="sport.php" style="display: block;"><li>Sport</li></a>
+		<a href="create.php" style="display: block;"><li>Stwórz Wiadomość</li></a>
+		<a href="slajd.php" style="display: block;"><li>Galeria</li></a>
 	</ul>
 </div>
 
 <section id="main">
 	<h2>Najnowsze Informacje</h2>
 	<?php
-		$newestNews = "SELECT * FROM `news` WHERE `idContentType` = 2 ORDER BY `addDate` ASC";
+		$newestNews = "SELECT * FROM `news` WHERE `idContentType` = 2 ORDER BY `addDate` DESC";
 		$resultN = $polaczenie->query($newestNews);
 		if (mysqli_num_rows($resultN) > 0) {
 		    while($row = $resultN->fetch_assoc()) {

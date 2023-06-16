@@ -29,11 +29,11 @@
 
 <div class="menu">
 	<ul>
-		<a href="Podstrony/zycie.php" style="display: block;"><li>Życie Gwiazd</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Filmy</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Sport</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Stwórz Wiadomość</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Galeria</li></a>
+		<a href="zycie.php" style="display: block;"><li>Życie Gwiazd</li></a>
+		<a href="filmy.php" style="display: block;"><li>Filmy</li></a>
+		<a href="sport.php" style="display: block;"><li>Sport</li></a>
+		<a href="create.php" style="display: block;"><li>Stwórz Wiadomość</li></a>
+		<a href="slajd.php" style="display: block;"><li>Galeria</li></a>
 	</ul>
 </div>
 
@@ -45,18 +45,18 @@ $resultN = $polaczenie->query($newestNews);
 if (mysqli_num_rows($resultN) > 0) {
     while($row = $resultN->fetch_assoc()) {
 		echo '
-			<section>
-				<h2>'.$row["title"].'</h2>
-				<section class="divimg">
-					<div>
-						<image class="headimg" alt="'.$row["imageSrc"].'" src="../img/'.$row["imageSrc"].'">
-					</div>
-					<section class="textContainer">
-						<p>'.$row["content"].'</p>
+				<h2 style="">'.$row["title"].'</h2>
+				<a href="Podstrony/news.php?id='.$row["idNews"].'">
+					<section class="infoContainer" style="margin-top: 0; height: auto">
+						<div class="maindivNews">
+							<image class="divimg" alt="'.$row["imageSrc"].'" src="../img/'.$row["imageSrc"].'">
+						</div>
+						<section>
+							<p class="text" style="padding: 10px; background-color: #222F3D; color: white">'.$row["content"].'</p>
+						</section>
 					</section>
-				</section>
-			</section>
-		';
+				</a>
+				';
 }} else {
 	echo '
     		<p>Najwyraźniej wystąpił jakiś błąd! :(</p>';

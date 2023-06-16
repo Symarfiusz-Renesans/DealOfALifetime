@@ -29,9 +29,9 @@
 <div class="menu">
 	<ul>
 		<a href="Podstrony/zycie.php" style="display: block;"><li>Życie Gwiazd</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Filmy</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Sport</li></a>
-		<a href="Podstrony/slajd.php" style="display: block;"><li>Stwórz Wiadomość</li></a>
+		<a href="Podstrony/filmy.php" style="display: block;"><li>Filmy</li></a>
+		<a href="Podstrony/sport.php" style="display: block;"><li>Sport</li></a>
+		<a href="Podstrony/create.php" style="display: block;"><li>Stwórz Wiadomość</li></a>
 		<a href="Podstrony/slajd.php" style="display: block;"><li>Galeria</li></a>
 	</ul>
 </div>
